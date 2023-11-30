@@ -9,7 +9,7 @@ function InputSection(props) {
   const btnHandler = (e) => {
     e.preventDefault();
     setList(ref.current.value, e.target.value);
-  }
+  };
 
   return (
     <InputWrapper>
@@ -18,12 +18,18 @@ function InputSection(props) {
       </div>
       <div className="search_container">
         <form className="input_container">
-          <input type="search" placeholder="type here......" ref={ref}/>
+          <input type="search" placeholder="type here......" ref={ref} />
         </form>
         <div className="buttons">
-          <button onClick={btnHandler} value="city">CITY</button>
-          <button onClick={btnHandler} value="state">STATE</button>
-          <button onClick={btnHandler} value="centre">CENTRE</button>
+          <button onClick={btnHandler} value="city">
+            CITY
+          </button>
+          <button onClick={btnHandler} value="state">
+            STATE
+          </button>
+          <button onClick={btnHandler} value="centre">
+            CENTRE
+          </button>
         </div>
       </div>
     </InputWrapper>
@@ -40,8 +46,6 @@ const InputWrapper = styled.div`
     background-color: #213bd9;
     padding: 0.5rem;
 
-    width: 50rem;
-    max-width: 95%;
     border-radius: 10px;
     p {
       font-size: 1.9rem;
@@ -80,7 +84,6 @@ const InputWrapper = styled.div`
       display: flex;
       flex-direction: row;
       gap: 0.5rem;
-      padding-right: 1.5rem;
       button {
         padding: 0.5rem;
         background-color: #213bd9;
